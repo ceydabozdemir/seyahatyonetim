@@ -1,0 +1,57 @@
+/* Filament'in varsayılan brand alanını özelleştirme */
+.filament-brand {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.75rem !important; /* Logo ve başlık arasındaki boşluk */
+}
+
+/* Logo stilleri */
+.filament-brand img {
+    display: block !important; /* Logonun gizlenmesini önler */
+    width: 2.5rem !important; /* Logo boyutu */
+    height: 2.5rem !important;
+    border-radius: 50% !important; /* Dairesel logo için */
+    object-fit: contain !important; /* Logo oranını korur */
+}
+
+/* Başlık stilleri */
+.filament-brand-name {
+    display: inline !important; /* Başlığın gizlenmesini önler */
+    font-size: 1.25rem !important; /* Başlık boyutu */
+    font-weight: 600 !important;
+    color: white !important; /* Başlık rengi */
+    opacity: 1 !important;
+    visibility: visible !important;
+    line-height: 1 !important;
+}
+
+/* Eğer Filament başlık için span kullanıyorsa */
+.filament-brand span {
+    display: inline !important;
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    color: white !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Filament'in üst çubuğunu koruma */
+.filament-header {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 0 1rem !important;
+    height: 4rem !important; /* Üst çubuk yüksekliğini koru */
+}
+
+/* Yan menü ve içerik alanını koruma */
+.filament-sidebar {
+    display: block !important;
+    width: 18rem !important; /* Yan menü genişliği */
+}
+
+.filament-main {
+    display: block !important;
+    margin-left: 18rem !important; /* Yan menü genişliğine göre içerik alanı */
+    padding: 1rem !important;
+}
